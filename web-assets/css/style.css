@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: "Jersey 15", sans-serif;
+}
+/*=====Common CSS Part Start=====*/
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(100deg, rgba(189,0,0,1) 0%, rgba(0,189,0,1) 50%, rgba(0,0,189,1) 100%);
+    animation: anim .5s infinite;
+}
+@keyframes anim{
+    0%{
+        background: linear-gradient(100deg, rgba(189,0,0,1) 0%, rgba(0,189,0,1) 50%, rgba(0,0,189,1) 100%);
+    }
+    50%{
+        background: linear-gradient(100deg, rgba(0,0,189,1) 0%, rgba(189,0,0,1) 50%, rgba(0,189,0,1) 100%);
+    }
+    100%{
+        background: linear-gradient(100deg, rgba(0,0,189,1) 0%, rgba(0,189,0,1) 50%, rgba(189,0,0,1) 100%);
+    }
+}
+:root{
+}
+/*=====Common CSS Part End=====*/
+
+/*=====Heading Part Start=====*/
+.heading{
+    text-align: center;
+    margin-top: 50px;
+    background: #ffffff;
+    border-radius: 50px;
+}
+.heading h1{
+    font-size: 50px;
+    color: #ee801a;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 900;
+}
+.heading p{
+    font-size: 25px;
+    color: #f55a13;
+    font-weight: 900;
+}
+/*=====Heading CSS Part End=====*/
+
+/*=====Input Part Start=====*/
+.form{
+    margin-top: 50px;
+}
+.form_main{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    width: 250px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: inset 0px -1px 8px 4px rgba(0,0,0,1);
+}
+.button{
+    width: 125px;
+    padding: 10px;
+    font-size: 20px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    transition: all linear .3s;
+}
+/*=====Input Part End=====*/
+
+/*=====Result Part Start=====*/
+.result{
+    width: 500px;
+    background: #ffffff;
+    text-align: center;
+    position: relative;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.line{
+    width: 300px;
+    height: 1px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.result p{
+    font-size: 20px;
+    text-align: center;
+}
+/*=====Result Part End=====*/
+
+/*=====Footer Part Start=====*/
+footer{
+    font-size: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+}
+/*=====Footer Part End=====*/
